@@ -50,17 +50,19 @@ transition: all 400ms ease;
 transform: translate(0px, 50px);
 }
 
-#nav-bar li a 
+#nav-bar li a /*Tom PLEASE COPY AND PASTE THIS CODE*/
 {
 position:relative;
 z-index: 1;
 top: 100px;
-left: -160px;
+left: -50;
 display: flex;
 flex-direction: column;
-color: white;
+color: #666666;
+background-color: white;
 text-align: center;
 text-decoration: none;
+border: solid #666666;
 }
 
 #nav-bar li
