@@ -1,5 +1,5 @@
 @media only screen 
-and (max-width : 768px){
+and (max-width : 767px){
 
 #nav-bar
 {
@@ -154,10 +154,10 @@ width: 55%;
 
 .general img
 {
-width: 100px;
+width: 18%;
 height: 120px;
 margin-right: 20px;
-margin-top: -110px;
+margin-top: -100px;
 }
 
 .gearM
@@ -280,7 +280,7 @@ padding:5px;
 
 
 
-/***** footer *****/
+/***** footer *****
 
 #footer
 {
@@ -367,7 +367,7 @@ display: block;
 color: white;
 text-decoration: none;
 cursor: pointer;
-}
+} */
 
 
 
@@ -435,7 +435,7 @@ transition: all 0.5 linear;
 #logo
 {
 
-width: 20%;
+width: 17%;
 height: 200px;
    float: left;
    padding-left: 50px;
@@ -507,9 +507,10 @@ color: #666666;
 
 .about img
 {
-margin-left: 5px;
-width: 250px;
+
+width: 15%;
 height:65px;
+margin-left: 3%;
 }
 
 
@@ -538,7 +539,7 @@ margin-top: 60px;
 .trout-p
 {
 width: 40%;
-height: 240px;
+height: 215px;
 background-color: #f5d473;
 }
 
@@ -758,7 +759,7 @@ height: 200px;
 
 
 
-
+#search{display: none;}
 .loadmore {display:none;}
 .gear-h2,.thanksto,.cont{display: none;}
 
@@ -1140,7 +1141,7 @@ height: 200px;
 
 
 
-
+#search{display: none;}
 .loadmore {display:none;}
 .gear-h2,.thanksto,.cont{display: none;}
 
