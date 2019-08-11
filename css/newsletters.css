@@ -1,3 +1,21 @@
+@font-face {
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+src: url('Roboto-Regular.woff') format('woff');
+src: url('Roboto-Condensed.woff') format('woff');
+}
+
+body
+{
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+
+
 @media only screen 
 and (max-width : 767px){
 
@@ -105,7 +123,9 @@ margin-top: 40px;
 margin-bottom: 60px;
 display: flex;
 flex-direction: column;
-width: 100%;
+width: 90%;
+margin-right: 5%;
+margin-left: 5%;
 
  }
 
@@ -155,6 +175,35 @@ text-align: center;
 .date p,.title p:hover
 {cursor: pointer;}
 
+
+#footer
+{
+
+width:100%;
+margin-top: 300px;
+height:70px;
+background-color:#9bbe4b;
+display: flex;
+flex-direction: row;
+}
+
+#footerlogo
+{
+padding-top:10px;
+padding-left: 15px;
+width: 155px;
+height: 60px;
+}
+
+.ft1
+{
+display:none;
+}
+
+.ft2
+{
+display:none;
+}
 
 }
 
@@ -247,7 +296,8 @@ margin-top: 40px;
 margin-bottom: 60px;
 display: flex;
 flex-direction: row;
-width: 95%;
+width: 90%;
+margin-right: 5%;
 margin-left: 5%;
  }
 
@@ -291,11 +341,75 @@ font-size: 1.8em;
 text-align: center;
 }
 
-.date p,.title p
-{padding-top: 10px;}
 
-.date p,.title p:hover
-{cursor: pointer;}
+/***** footer *****/
+
+#footer
+{
+
+width:100%;
+margin-top: 300px;
+height:70px;
+background-color:#9bbe4b;
+display: flex;
+flex-direction: row;
+}
+
+#footerlogo
+{
+padding-top:10px;
+padding-left: 15px;
+width: 155px;
+height: 60px;
+}
+
+.ft1
+{
+width:30%;
+margin-left: -13px;
+list-style-type: none;
+display: flex;
+flex-direction: row;
+
+
+
+}
+
+
+.ft1 li
+{
+margin-top: 15px;
+padding: 2px;
+
+}
+
+.ft1 li a
+{
+display: block;
+color: white;
+padding: 10px;
+font-size: 0.9em;
+text-decoration: none;
+letter-spacing: 0.5px;
+cursor: pointer;
+}
+
+.ft1 li a:hover
+{
+color:#9abe50;
+background-color: white;
+border-radius: 13px;
+-webkit-transition: all 0.5 linear;
+-o-transition: all 0.5 linear;
+-moz-transition: all 0.5 linear;
+transition: all 0.5 linear;
+}
+
+
+.ft2
+{
+display:none;
+}
 
 
 }
@@ -312,7 +426,7 @@ and (min-width: 1024px) {
 
 main
 {	
-	font-family: 'Work Sans', sans-serif;
+	
     width: 1200px;
     padding: 0 10px 10px 10px;
     margin: 0 auto;

@@ -1,3 +1,22 @@
+@font-face {
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+src: url('Roboto-Regular.woff') format('woff');
+src: url('Roboto-Condensed.woff') format('woff');
+}
+
+body
+{
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+
+.ptxt {font-family: 'Roboto Condensed', sans-serif;}
+
 @media only screen 
 and (max-width : 767px){
 
@@ -50,18 +69,21 @@ transition: all 400ms ease;
 transform: translate(0px, 50px);
 }
 
-#nav-bar li a 
+#nav-bar li a /*Tom PLEASE COPY AND PASTE THIS CODE*/
 {
 position:relative;
 z-index: 1;
 top: 100px;
-left: -160px;
+left: -50;
 display: flex;
 flex-direction: column;
-color: white;
+color: #666666;
+background-color: white;
 text-align: center;
 text-decoration: none;
+border: solid #666666;
 }
+
 
 #nav-bar li
 {
@@ -136,28 +158,25 @@ font-size: 1em;
 {
 margin-top: 46px;
 width: 100%;
-height: 130px;
+height: 100%;
 background-color: #f5d473;  
 
 }
 
 .general p
 {
-padding-top: 8px;
-padding-left: 15px;
+/*padding-top: 7px;*/
+padding: 5%;
 color: #666666;
-font-size: 10px;
-line-height: 1.08;
-width: 55%;
+font-size: 1em;
+line-height: 1;
+width: 90%;
 }
 
 
 .general img
 {
-width: 18%;
-height: 120px;
-margin-right: 20px;
-margin-top: -100px;
+display:none;
 }
 
 .gearM
@@ -192,9 +211,7 @@ margin-left: 20%;
 
 
 #gear
-{width: 100%;
-
-}
+{width: 100%;}
 
 .loadmore
 {
@@ -278,13 +295,17 @@ padding:5px;
 
 
 
+.gear-box,.thanksto,.cont
+{display:none;}
 
+#vest,#for-tablet{display:none;}
 
-/***** footer *****
 
 #footer
 {
+
 width:100%;
+margin-top: 300px;
 height:70px;
 background-color:#9bbe4b;
 display: flex;
@@ -301,80 +322,15 @@ height: 60px;
 
 .ft1
 {
-width:35px;
-margin-left: -13px;
-list-style-type: none;
-display: flex;
-flex-direction: row;
-
-
-
+display:none;
 }
-
-
-.ft1 li
-{
-margin-top: 15px;
-padding: 2px;
-
-}
-
-.ft1 li a
-{
-display: block;
-color: white;
-padding: 10px;
-font-size: 0.9em;
-text-decoration: none;
-letter-spacing: 0.5px;
-cursor: pointer;
-}
-
-.ft1 li a:hover
-{
-color:#9abe50;
-background-color: white;
-border-radius: 13px;
--webkit-transition: all 0.5 linear;
--o-transition: all 0.5 linear;
--moz-transition: all 0.5 linear;
-transition: all 0.5 linear;
-}
-
 
 .ft2
 {
-width:35px;
-margin-top: 10px;
-margin-left: 250px;
-list-style-type: none;
-display: flex;
-flex-direction: row;
-
-
+display:none;
 }
 
-.ft2 li
-{
-margin-top: 10px;
-padding-right: 15px;
-justify-content: space-evenly;
-}
 
-.ft2 li a
-{
-display: block;
-color: white;
-text-decoration: none;
-cursor: pointer;
-} */
-
-
-
-.gear-box,.thanksto,.cont
-{display:none;}
-
-#vest,#for-tablet{display:none;}
 
 }  
 
@@ -764,6 +720,74 @@ height: 200px;
 .gear-h2,.thanksto,.cont{display: none;}
 
 
+/***** footer *****/
+
+#footer
+{
+
+width:100%;
+margin-top: 300px;
+height:70px;
+background-color:#9bbe4b;
+display: flex;
+flex-direction: row;
+}
+
+#footerlogo
+{
+padding-top:10px;
+padding-left: 15px;
+width: 155px;
+height: 60px;
+}
+
+.ft1
+{
+width:20%;
+margin-left: -13px;
+list-style-type: none;
+display: flex;
+flex-direction: row;
+
+
+
+}
+
+
+.ft1 li
+{
+margin-top: 15px;
+padding: 2px;
+
+}
+
+.ft1 li a
+{
+display: block;
+color: white;
+padding: 10px;
+font-size: 0.9em;
+text-decoration: none;
+letter-spacing: 0.5px;
+cursor: pointer;
+}
+
+.ft1 li a:hover
+{
+color:#9abe50;
+background-color: white;
+border-radius: 13px;
+-webkit-transition: all 0.5 linear;
+-o-transition: all 0.5 linear;
+-moz-transition: all 0.5 linear;
+transition: all 0.5 linear;
+}
+
+
+.ft2
+{
+display:none;}
+
 
 
 
@@ -774,6 +798,14 @@ height: 200px;
 @media only screen
 and (min-width: 900px)
 and (max-width: 1024px) {
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  src:  url('Roboto-Regular.woff') format('woff'),
+        url('Roboto-Condensed.woff') format('woff');
+}
+
 
 
 #nav-bar
@@ -1145,6 +1177,99 @@ height: 200px;
 .loadmore {display:none;}
 .gear-h2,.thanksto,.cont{display: none;}
 
+
+/***** footer *****/
+
+#footer
+{
+
+width:100%;
+margin-top: 300px;
+height:70px;
+background-color:#9bbe4b;
+display: flex;
+flex-direction: row;
+}
+
+#footerlogo
+{
+padding-top:10px;
+padding-left: 15px;
+width: 155px;
+height: 60px;
+}
+
+.ft1
+{
+width:20%;
+margin-left: -13px;
+list-style-type: none;
+display: flex;
+flex-direction: row;
+
+
+
+}
+
+
+.ft1 li
+{
+margin-top: 15px;
+padding: 2px;
+
+}
+
+.ft1 li a
+{
+display: block;
+color: white;
+padding: 10px;
+font-size: 0.9em;
+text-decoration: none;
+letter-spacing: 0.5px;
+cursor: pointer;
+}
+
+.ft1 li a:hover
+{
+color:#9abe50;
+background-color: white;
+border-radius: 13px;
+-webkit-transition: all 0.5 linear;
+-o-transition: all 0.5 linear;
+-moz-transition: all 0.5 linear;
+transition: all 0.5 linear;
+}
+
+
+.ft2
+{
+width:20%;
+margin-top: 10px;
+margin-left: 35%;
+list-style-type: none;
+display: flex;
+flex-direction: row;
+
+
+}
+
+.ft2 li
+{
+margin-top: 10px;
+padding-right: 15px;
+justify-content: space-evenly;
+}
+
+.ft2 li a
+{
+display: block;
+color: white;
+text-decoration: none;
+cursor: pointer;
+}
+
+
 }
 
 
@@ -1161,11 +1286,13 @@ and (min-width: 1024px) {
 
 main
 {	
-	font-family: 'Work Sans', sans-serif;
+	 
     width: 1200px;
     padding: 0 10px 10px 10px;
     margin: 0 auto;
 }
+
+
 
 /* nav */
 
@@ -1327,11 +1454,10 @@ background-color: #f5d473;
 .text 
 {
 color: #666666;
-font-size: 12px;
+font-size: 13px;
 margin-left:7px;
 height: 220px;
-line-height: 2.3;
-overflow: hidden;
+line-height: 2;
 }
 
 
@@ -1365,22 +1491,6 @@ font-size: 1.5em;
 
 
 
-#readmore
-{
-margin-top: 20px;
-margin-left: 50px;
-font-size: 1em;
-color: white;
-width: 100px;
-height:47px;
-background: #35bbca; /* Old browsers */
-background: -moz-linear-gradient(-45deg,  #35bbca 0%, #d3dd18 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  #35bbca 0%,#d3dd18 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  #35bbca 0%,#d3dd18 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35bbca', endColorstr='#d3dd18',GradientType=1 ); 
-border-radius: 15px;
-cursor: pointer;
-}
 
 
 /*****about child festival********/
@@ -1608,6 +1718,7 @@ margin-left: 15px;
 color: #666666;
 font-size: 1.8em;
 margin-top: 60px;
+margin-left: 160px;
 }
 
 .cont
@@ -1732,8 +1843,6 @@ margin-left: -13px;
 list-style-type: none;
 display: flex;
 flex-direction: row;
-
-
 
 }
 
