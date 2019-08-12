@@ -1,5 +1,5 @@
 (() => {
-	console.log("Lee,Lin,Guzman midterm");	
+	console.log("Yoon,Lin,Guzman");	
 
 
 

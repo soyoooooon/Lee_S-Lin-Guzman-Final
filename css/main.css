@@ -17,6 +17,8 @@ body
 
 .ptxt {font-family: 'Roboto Condensed', sans-serif;}
 
+/*******mobile first*********/
+
 @media only screen 
 and (max-width : 767px){
 
@@ -57,17 +59,14 @@ z-index: 1;
 border: 0;
 width: 45px;
 height: 45px;
-transition: all 400ms ease;
+
 }
 
 #button.expanded
 {
--moz-transform: translate(0px, 50px);
--webkit-transform: translate(0px, 50px);
--o-transform: translate(0px, 50px);
--ms-transform: translate(0px, 50px);
-transform: translate(0px, 50px);
+
 }
+
 
 #nav-bar li a /*Tom PLEASE COPY AND PASTE THIS CODE*/
 {
@@ -250,6 +249,8 @@ margin-top: 15px;
 {
 text-align: center;
 margin-top: 40px;
+width: 45%;
+margin-right: 10%;
 font-size: 25px;
 color: #666666;
 list-style: none;
@@ -268,7 +269,8 @@ font-size: 27px;
 
 .president li
 {
-padding:10px;
+width: 95%;
+padding:5%;
 }
 
 
@@ -277,8 +279,8 @@ padding:10px;
 {
 
 height: 400px;
+width: 45%;
 margin-top: 45px;
-margin-left: 30%;
 font-size: 24px;
 color: #666666;
 list-style: none;
@@ -289,8 +291,8 @@ flex-direction: column;
 
 .volunteer li
 {
-
-padding:5px;
+ width: 95%;
+padding:5%;
 }
 
 
