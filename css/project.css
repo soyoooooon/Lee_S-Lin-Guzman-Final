@@ -58,16 +58,11 @@ z-index: 1;
 border: 0;
 width: 45px;
 height: 45px;
-transition: all 400ms ease;
 }
 
 #button.expanded 
 {
--moz-transform: translate(0px, 50px);
--webkit-transform: translate(0px, 50px);
--o-transform: translate(0px, 50px);
--ms-transform: translate(0px, 50px);
-transform: translate(0px, 50px);
+
 }
 
 #nav-bar li a /*Tom PLEASE COPY AND PASTE THIS CODE*/
