@@ -17,6 +17,8 @@ body
 
 .ptxt {font-family: 'Roboto Condensed', sans-serif;}
 
+/*******mobile first*********/
+
 @media only screen 
 and (max-width : 767px){
 
